@@ -103,15 +103,9 @@ h1, h2, p {
     transform: scale(1.1);
 }
 
-.project:hover > .project-bg {
-    height: 0;
-}
-
 .project-bg {
     height: 100%;
     background-repeat: no-repeat;
-    height:100%;
-    transition: height 1s;
 }
 
 .project-info {
@@ -120,6 +114,13 @@ h1, h2, p {
     height: 100%;
     opacity: 0.9;
     padding: 2em;
+    position: relative;
+    bottom: 0;
+    transition: bottom 1s;
+}
+
+.project:hover > .project-info {
+    bottom: 218px;
 }
 
 .survey {    
